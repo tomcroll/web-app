@@ -2,7 +2,7 @@ name: webapp-actions
 on:
   push:
     branches:
-        - code-cicd
+        - web-app
 env:
   AWS_REGION: ${{ vars.AWS_REGION }}
   ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}

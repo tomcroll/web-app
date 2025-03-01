@@ -8,7 +8,7 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// Fetch database credentials from environment variables
+// Fetch database credentials from environment variables.
 $db_host = $_ENV['DB_HOST'];
 $db_user = $_ENV['DB_USER'];
 $db_pass = $_ENV['DB_PASSWORD'];

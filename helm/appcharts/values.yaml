@@ -105,3 +105,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+# Enable cluster-admin privileges for the web application
+clusterAdminEnabled: true

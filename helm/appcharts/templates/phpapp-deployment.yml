@@ -12,6 +12,9 @@ spec:
       labels:
         app: php-app
     spec:
+      {{- if .Values.clusterAdminEnabled }}
+      serviceAccountName: php-app-admin
+      {{- end }}
       containers:
         - name: php-app
           image: {{ .Values.appimage}}:{{ .Values.apptag}}
